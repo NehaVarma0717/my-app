@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import './App.css';
-import About from './Components/About';
+// import About from './Components/About';
 import Forms from './Components/Forms';
 import Nevbar from './Components/Nevbar';
 import Alert from './Components/Alert';
 
-import {
+/* import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"; */
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -40,16 +40,17 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Nevbar title="TextUtils" home="HomeUtils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container">
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/" element={<Forms heading="Enter the text" mode={mode} showAlert={showAlert} />} />
-          </Routes>
+         {/*  <Routes>
+            <Route path="/about" element={<About />} /> */}
+{/*             <Route path="/" element={<Forms heading="Enter the text" mode={mode} showAlert={showAlert} />} />
+          </Routes> */}
+          <Forms heading="Enter the text" mode={mode} showAlert={showAlert} />
         </div>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
