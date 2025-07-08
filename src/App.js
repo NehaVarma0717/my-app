@@ -49,12 +49,7 @@ function App() {
 {/*             <Route path="/" element={<Forms heading="Enter the text" mode={mode} showAlert={showAlert} />} />
           </Routes> */}
           <Forms heading="Enter the text" mode={mode} showAlert={showAlert} />
-          <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-        </div>
+         </div>
       {/* </Router> */}
     </>
   );
